@@ -31,3 +31,22 @@ var App = {
 	}
 
 };
+
+// Sticky header navigation
+var offset = $( ".navRow" ).offset();
+var sticky = document.getElementById("navRow");
+$(window).scroll(function() {
+	if ( $('body').scrollTop() >= 50){
+		$('.navRow').addClass('fixed');
+	} else {
+		$('.navRow').removeClass('fixed');
+	}
+});
+
+// Slide out site navigation
+
+$(function() {
+	$('#siteNav-btn').click(function() {
+		$('.siteNavPanel').toggleClass("slide-out");
+	});
+});

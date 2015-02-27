@@ -1,0 +1,65 @@
+$black: 		#222;
+$white:			#fff;
+$bc-blue: 	#005695;
+$bc-green: 	#9c3;
+$bc-orange: #e48325;
+$bc-gray: 	#c2c2c2;
+
+$bc-lt-blue:#39c;
+$mid-gray: #999;
+$light-gray: #c2c2c2;
+$lightest-gray: #efefef;
+
+
+// Colors for facets
+$facet-beige:		#efb780;
+$facet-black:		#000;
+$facet-blue:		#369;
+$facet-brown:		#963;
+$facet-gray:		#ccc;
+$facet-green:		#093;
+$facet-orange:	#f93;
+$facet-pink:		#f39;
+$facet-purple:	#639;
+$facet-red:			#f00;
+$facet-white:		#fff;
+$facet-yellow:	#ff0;
+
+.facet-Beige	{background-color:$facet-beige;}
+.facet-Black	{background-color:$facet-black;}
+.facet-Blue		{background-color:$facet-blue;}
+.facet-Brown	{background-color:$facet-brown;}
+.facet-Gray		{background-color:$facet-gray;}
+.facet-Green	{background-color:$facet-green;}
+.facet-Orange	{background-color:$facet-orange;}
+.facet-Pink		{background-color:$facet-pink;}
+.facet-Purple	{background-color:$facet-purple;}
+.facet-Red		{background-color:$facet-red;}
+.facet-White	{background-color:$facet-white;}
+.facet-Yellow	{background-color:$facet-yellow;}
+
+// Color spectrum for rating systems
+$ranking-0:		$light-gray;
+$ranking-1:		#ff1900;
+$ranking-2:		#fe4800;
+$ranking-3:		#ff7c03;
+$ranking-4:		#ffad03;
+$ranking-5:		#ffea02;
+$ranking-6:		#e3fe02;
+$ranking-7:		#b1fc01;
+$ranking-8:		#7cff03;
+$ranking-9:		#0fec02;
+$ranking-10:	#09da04;
+
+.rank0, .rank1, .rank2, .rank3, .rank4, .rank5, .rank6, .rank7, .rank8, .rank9, .rank10{color:$black;}
+.rank0 {background-color:$ranking-0;}
+.rank1 {background-color:$ranking-1;}
+.rank2 {background-color:$ranking-2;}
+.rank3 {background-color:$ranking-3;}
+.rank4 {background-color:$ranking-4;}
+.rank5 {background-color:$ranking-5;}
+.rank6 {background-color:$ranking-6;}
+.rank7 {background-color:$ranking-7;}
+.rank8 {background-color:$ranking-8;}
+.rank9 {background-color:$ranking-9;}
+.rank10{background-color:$ranking-10;}
