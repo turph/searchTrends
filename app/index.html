@@ -13,100 +13,83 @@
 </head>
 
 <body>
-	<div class="header">
-		<div class="brandRow"><img src="assets/img/bc-logo.png" width="183" height="50" alt="Bc Logo"></div>
-		<div class="navRow"><a href="#" id="siteNav-btn"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span><span class="navTitle">Menu</span></a></div>
+<!-- Header -->
+<div class="header">
+	<div class="brandRow"><img src="assets/img/bc-logo.png" width="183" height="50" alt="Bc Logo"></div>
+	<div class="navRow"><a id="siteNav-btn"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span><span class="navTitle">Menu</span></a></div>
+</div>
+<!-- Navigation Panel -->
+<div class="siteNavPanel">
+	Search Stuff
+	<a ref="">Search Term Types</a>
+	<a ref="">Null Searches</a>
+	<a ref="">Facets</a>
+	Visitor Stuff
+	<a ref="">Locations</a>
+	<a ref="">Device Types</a>
+	<a ref="">OSs</a>
+</div>
+<!-- Navigation Panel -->
+<div id="viewport" class="container">
+  <div class="page-header">
+      <h1>Search Term Types</h1>
+      <p class="lead">Term types are foo.</p>
+  </div>
+	<div class="row"><!-- Row 1 -->
+		<h2>Brand</h2>
+		<div class="col-md-3"><!-- Tile 1 -->
+			<div class="tile topList">
+				Term: Brand
+				<a href>the north face</a>
+				<a href>patagonia</a>
+				<a href>northface</a>
+				<a href>arctyrx</a>
+				<a href>burton</a>
+			</div>
+		</div>
+		<div class="col-md-3"><!-- Tile 2 -->
+			<div class="tile">
+				Term: Brand + Category
+			</div>
+		</div>
+		<div class="col-md-3"><!-- Tile 3 -->
+			<div class="tile">
+				Term: Brand + Gender
+			</div>
+		</div>
+		<div class="col-md-3"><!-- Tile 4 -->
+			<div class="tile">
+				Term: Brand + Gender + Category
+			</div>
+		</div>
 	</div>
-	<div class="siteNavPanel">
-		nav options
+	<div class="row"><!-- Row 2 -->
+		<h2>Category</h2>
+		<div class="col-md-3"><!-- Tile 1 -->
+			<div class="tile">
+				Term: Category C1
+			</div>
+		</div>
+		<div class="col-md-3"><!-- Tile 2 -->
+			<div class="tile">
+				Term: Category C2+
+			</div>
+		</div>
+		<div class="col-md-3"><!-- Tile 3 -->
+			<div class="tile">
+				Term: Category + Gender
+			</div>
+		</div>
 	</div>
-        <div id="viewport" class="container">
-
-            <div class="page-header">
-                <h1>CodeKit Kickoff</h1>
-                <p class="lead">Based on the Twitter Bootstrap basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
-            </div>
-
-            <h3>Three equal columns</h3>
-            <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
-            <div class="row">
-                <div class="col-md-4">.col-md-4</div>
-                <div class="col-md-4">.col-md-4</div>
-                <div class="col-md-4">.col-md-4</div>
-            </div>
-
-            <h3>Three unequal columns</h3>
-            <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
-            <div class="row">
-                <div class="col-md-3">.col-md-3</div>
-                <div class="col-md-6">.col-md-6</div>
-                <div class="col-md-3">.col-md-3</div>
-            </div>
-
-            <h3>Two columns</h3>
-            <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
-            <div class="row">
-                <div class="col-md-8">.col-md-8</div>
-                <div class="col-md-4">.col-md-4</div>
-            </div>
-
-            <h3>Full width, single column</h3>
-            <p class="text-warning">No grid classes are necessary for full-width elements.</p>
-
-            <hr>
-
-            <h3>Two columns with two nested columns</h3>
-            <p>Per the documentation, nesting is easy—just put a row of columns within an existing row. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
-            <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
-            <div class="row">
-                <div class="col-md-8">
-                    .col-md-8
-                    <div class="row">
-                        <div class="col-md-6">.col-md-6</div>
-                        <div class="col-md-6">.col-md-6</div>
-                    </div>
-                </div>
-                <div class="col-md-4">.col-md-4</div>
-            </div>
-
-            <hr>
-
-            <h3>Mixed: mobile and desktop</h3>
-            <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
-            <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
-            <div class="row">
-                <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-6">.col-xs-6 .col-md-6</div>
-                <div class="col-xs-6 col-md-6">.col-xs-6 .col-md-6</div>
-            </div>
-
-            <hr>
-
-            <h3>Mixed: mobile, tablet, and desktop</h3>
-            <p></p>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-lg-8">.col-xs-12 .col-lg-8</div>
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-lg-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-sm-4 .col-lg-4</div>
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-sm-4 .col-lg-4</div>
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-sm-4 .col-lg-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-lg-6">.col-xs-6 .col-sm-6 .col-lg-6</div>
-                <div class="col-xs-6 col-sm-6 col-lg-6">.col-xs-6 .col-sm-6 .col-lg-6</div>
-            </div>
-
-        </div>
+	<div class="row"><!-- Row 3 -->
+		<h2>Technology</h2>
+		<div class="col-md-3"><!-- Tile 1 -->
+			<div class="tile">
+				Term: Technology
+			</div>
+		</div>
+	</div>
+</div>
 
 		<script src="assets/js/app.min.js"></script>	
 

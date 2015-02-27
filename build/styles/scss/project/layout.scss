@@ -1,0 +1,20 @@
+/* Removing bootstrap defaults */
+#viewport [class*="col-"]{background-color:transparent;border:0;}
+
+/* General Page */
+body{background-color:$lightest-gray;}
+.row h2{margin-left:15px;}
+
+/* Tile */
+.tile{
+	@include border-radius($topleft:2px, $topright:2px, $bottomright:2px, $bottomleft:2px);
+	@include box-shadow($x:2px, $y:2px, $blur:2px, $color:$light-gray);
+	border:1px solid $mid-gray;background-color:$white;padding:10px;
+}
+.topList{
+	font-weight:bold;
+	a{
+		display:block;font-weight:normal;border-bottom:1px solid $lightest-gray;line-height:45px;padding:0 0 0 10px;
+		&:hover{background-color:rgba(142, 68, 173, 0.4);color:$white;}
+	}
+}
