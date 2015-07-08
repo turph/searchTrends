@@ -6,16 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Title</title>		
-	<script src="../build/js/app.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../build/lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../build/lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" media="screen" href="assets/css/app.css">      
+	<script src="../../build/js/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../build/lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../build/lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" media="screen" href="../assets/css/app.css">      
 </head>
 
 <body>
 <!-- Header -->
 <div class="header">
-	<div class="brandRow"><img src="assets/img/bc-logo.png" width="183" height="50" alt="Bc Logo"></div>
+	<div class="brandRow"><img src="../assets/img/bc-logo.png" width="183" height="50" alt="Bc Logo"></div>
 	<div class="navRow"><a id="siteNav-btn"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span><span class="navTitle">Menu</span></a></div>
 </div>
 <!-- Navigation Panel -->
@@ -29,9 +29,15 @@
 	<a ref="">Device Types</a>
 	<a ref="">OSs</a>
 </div>
-<!-- Navigation Panel -->
+<!-- Contents -->
+<div class="cat-head" style="background-image:url(../assets/img/cat/searchTerm.png)">
+	<div class="cat-title">
+		<h2>Search Term Types</h2>
+		<p>Classifying visitor's search entries into one of twelve term types allows SBnR to spot trends, understand visitor behavior and do a bit of forecasting. <a href=#learn>| Learn more |</a></p>
+	</div>
+</div>
 <div id="viewport" class="container">
-  <div class="page-header">
+  <div class="">
       <h1>Search Term Types</h1>
       <p class="lead">Term types are foo.</p>
 			<iframe width="1616" height="465.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=180801308&amp;format=interactive"></iframe>
@@ -92,16 +98,15 @@
 	</div>
 </div>
 
-		<script src="assets/js/app.min.js"></script>	
+<script src="assets/js/app.min.js"></script>	
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		  ga('create', App.settings.ga.urchin, App.settings.ga.url);
-		  ga('send', 'pageview');
-		</script>		
-    </body>
+	ga('create', App.settings.ga.urchin, App.settings.ga.url);
+	ga('send', 'pageview');
+</script>		
+</body>
 </html>

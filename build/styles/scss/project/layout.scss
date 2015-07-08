@@ -2,8 +2,21 @@
 #viewport [class*="col-"]{background-color:transparent;border:0;}
 
 /* General Page */
-body{background-color:$lightest-gray;}
+body{background-color:$white;}
 .row h2{margin-left:15px;}
+
+/* Category Pages */
+.cat-head{
+	margin-top:99px;height:400px;background-size:cover;position:relative;
+	.cat-title{
+		color:$white;width:45%;position:absolute;bottom:0;margin:0 15px;
+		p>a{
+			color:$white;text-decoration:underline;
+			&:hover{color:$sunflower;text-decoration:underline;}
+		}
+	}
+}
+
 
 /* Tile */
 .tile{
