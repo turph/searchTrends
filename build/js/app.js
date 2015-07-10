@@ -50,3 +50,8 @@ $(function() {
 		$('.siteNavPanel').toggleClass("slide-out");
 	});
 });
+
+// Dynamic sized charting iFrames
+$(function() {
+	$('.fullWidthChart').css('height', $(window).height()+'px');
+});

@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Title</title>		
-	<script src="../../build/js/app.js" type="text/javascript" charset="utf-8"></script>
+	<title>Search Term Types</title>		
+	<script src="../assets/js/app.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../build/lib/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="../../build/lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" media="screen" href="../assets/css/app.css">      
@@ -33,80 +33,133 @@
 <div class="cat-head" style="background-image:url(../assets/img/cat/searchTerm.png)">
 	<div class="cat-title">
 		<h2>Search Term Types</h2>
-		<p>Classifying visitor's search entries into one of twelve term types allows SBnR to spot trends, understand visitor behavior and do a bit of forecasting. <a href=#learn>| Learn more |</a></p>
+		<p>Classifying visitor's search entries into one of twelve term types allows SBnR to spot trends, understand visitor behavior and do a bit of forecasting. <a href=#learn>| Learn a bit more |</a></p>
 	</div>
 </div>
-<div id="viewport" class="container">
-  <div class="">
-      <h1>Search Term Types</h1>
-      <p class="lead">Term types are foo.</p>
-			<iframe width="1616" height="465.5" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=180801308&amp;format=interactive"></iframe>
-  </div>
-	<div class="row"><!-- Row 1 -->
-		<h2>Brand</h2>
+<div id="viewport" class="container category">
+  <section class="row"><!-- Top Chart -->
+		<h1>Overview</h1>
+    <p class="lead">Top Chart: 2015 trend lines for our Top 200 search term types</p>
+		<iframe width="1171" height="465" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=180801308&amp;format=interactive"></iframe>
+		<p class="small">Over time, visitors will search our catalog in different ways. Factors such as; seasonality, holidays, weather events, customer types and even the mix of brands we carry will influence the terms entered. While the terms may change our current assumption is we should not see short term type variations.     Our customer base is extremely brand focused.</p>
+  </section>
+  <section class="row"><!-- Term Head -->
+		<h2>Top 200 Terms</h2>
+    <p class="lead">A shrinking head and a longer tail</p>
+		<iframe width="1178" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=1797197257&amp;format=interactive"></iframe>
+		<p class="small">There is a downward trend as to how much the top 200 terms can be attributed to the overall percentage. As we push more browsers into search ?</p>
+  </section>
+	<section class="row"><!-- Top Search Terms -->
+		<h2>June's top search terms</h2>
+    <p class="lead">What our visitors were looking for</p>
 		<div class="col-md-3"><!-- Tile 1 -->
-			<div class="tile topList">
-				Term: Brand
-				<a href>the north face</a>
-				<a href>patagonia</a>
-				<a href>northface</a>
-				<a href>arctyrx</a>
-				<a href>burton</a>
+			<div class="tile">
+				<iframe width="283.5" height="264" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=1224066344&amp;format=interactive"></iframe>
+				<h5>Adjusted for misspellings</h5>
+				<table class="small">
+					<tr><td>The North Face</td><td>44,888</td></tr>
+					<tr><td>Arc'teryx</td><td>36,165</td></tr>
+					<tr><td>Patagonia</td><td>25,413</td></tr>
+					<tr><td>Oakley</td><td>13,701</td></tr>
+					<tr><td>Mammut</td><td>11,734</td></tr>
+					<tr><td>Norrøna</td><td>11,269</td></tr>
+					<tr><td>Chaco</td><td>10,188</td></tr>
+					<tr><td>Burton</td><td>9,775</td></tr>
+					<tr><td>Prana</td><td>8,364</td></tr>
+					<tr><td>Vans</td><td>7,935</td></tr>
+				</table>
 			</div>
 		</div>
 		<div class="col-md-3"><!-- Tile 2 -->
 			<div class="tile">
-				Term: Brand + Category
+				<iframe width="288.5" height="264" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=347982847&amp;format=interactive"></iframe>
+				<h5>Adjusted for plurals</h5>
+				<table class="small">
+					<tr><td>Backpack</td><td>34,435</td></tr>
+					<tr><td>Tent</td><td>28,492</td></tr>
+					<tr><td>Sleeping Bag</td><td>22,819</td></tr>
+					<tr><td>Sunglasses</td><td>18,728</td></tr>
+					<tr><td>Hat</td><td>16,630</td></tr>
+					<tr><td>Kayak</td><td>16,162</td></tr>
+					<tr><td>Snowboard</td><td>11,511</td></tr>
+					<tr><td>Sleeping Pad</td><td>10,058</td></tr>
+					<tr><td>Hammock</td><td>8,577</td></tr>
+					<tr><td>Helmet</td><td>8,369</td></tr>
+				</table>
 			</div>
 		</div>
 		<div class="col-md-3"><!-- Tile 3 -->
 			<div class="tile">
-				Term: Brand + Gender
+				<iframe width="288" height="265" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=713132761&amp;format=interactive"></iframe>
+				<h5>&nbsp;</h5>
+				<table class="small">
+					<tr><td>Men's Clothing</td><td>23,819</td></tr>
+					<tr><td>Women's Backpacks</td><td>22,221</td></tr>
+					<tr><td>Climbing Womens</td><td>4,860</td></tr>
+					<tr><td>Swimwear Womens</td><td>3,503</td></tr>
+					<tr><td>Hats for Men</td><td>3,463</td></tr>
+					<tr><td>Board Shorts Mens</td><td>3,008</td></tr>
+					<tr><td>Tank Top Mens</td><td>2,902</td></tr>
+					<tr><td>Mens Shorts</td><td>2,781</td></tr>
+					<tr><td>Sunglasses-Polarized Mens</td><td>2,716</td></tr>
+					<tr><td>Trucker Hats Mens</td><td>2,077</td></tr>
+				</table>
 			</div>
 		</div>
 		<div class="col-md-3"><!-- Tile 4 -->
 			<div class="tile">
-				Term: Brand + Gender + Category
+				<iframe width="288.5" height="266" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1zKqjj-4pfOoGEcI4xxlweO4xVr1wkAENzyLZRGv-atQ/pubchart?oid=1244960745&amp;format=interactive"></iframe>
+				<h5>&nbsp;</h5>
+				<table class="small">
+					<tr><td>Oakley Sunglasses</td><td>6,534</td></tr>
+					<tr><td>North Face Jacket</td><td>5,529</td></tr>
+					<tr><td>Mammut Jackets</td><td>4,885</td></tr>
+					<tr><td>The North Face Jackets</td><td>4,313</td></tr>
+					<tr><td>Patagonia Hat</td><td>3,651</td></tr>
+					<tr><td>Osprey Backpacks</td><td>3,438</td></tr>
+					<tr><td>Patagonia Hats</td><td>2,904</td></tr>
+					<tr><td>North Face Backpacks</td><td>2,709</td></tr>
+					<tr><td>Arc'tyerx Outerwear Pants</td><td>2,306</td></tr>
+					<tr><td>Dakine Backpacks</td><td>2,197</td></tr>
+				</table>
 			</div>
 		</div>
-	</div>
-	<div class="row"><!-- Row 2 -->
-		<h2>Category</h2>
-		<div class="col-md-3"><!-- Tile 1 -->
-			<div class="tile">
-				Term: Category C1
+		<div class="col-md-12 "><!-- Narrative -->
+			<h4>So, what were our visitors telling us in June?</h4>
+			<div class="content-col2">
+				<h5>Hey, it's summer!</h5>
+				<p>Overall, searches pertaining to Hike & Camp predominate which was not surprising - backpacks, tents, sunglasses and hats.</p>
+
+				<h5>Brand Term Highlights</h5>
+				<p>Adjusted for misspellings, The North Face and Arc'teryx are really our top brand searches Consolidating these instances brings a few brands up into the top ten and reorders the bottom slots a little.</p>
+
+				<h5>Category Term Highlights</h5>
+				<p>Adjusted for plurals, looks like our visitors are getting outside this summer - backpacks, tents and sleeping bags are the top terms.</p>
+
+				<h5>Category + Gender Term Highlights</h5>
+				<p>Two terms dominate the volume; Men's Clothing and Women's Backpacks. Given the vast disparity between these values and the third place term there is probably a larger issue at work here. From looking at historical data, it is very uncommon for visitors to be so grammatically correct in their searches, so the inclusion of the apostrophe in the gender values is an indication that these instances are most likely due to promotional elements driving traffic to search PLPs. This is a limitation in how we have implemented Omniture.</p>
+
+				<h5>Brand + Category Term Highlights</h5>
+				<p>Adjusting for misspellings and plurals within this category is difficult at best, there are just too many variations. But as the data shows, the top brands and top categories are represented within the top ten results.</p>
 			</div>
 		</div>
-		<div class="col-md-3"><!-- Tile 2 -->
-			<div class="tile">
-				Term: Category C2+
-			</div>
-		</div>
-		<div class="col-md-3"><!-- Tile 3 -->
-			<div class="tile">
-				Term: Category + Gender
-			</div>
-		</div>
-	</div>
-	<div class="row"><!-- Row 3 -->
-		<h2>Technology</h2>
-		<div class="col-md-3"><!-- Tile 1 -->
-			<div class="tile">
-				Term: Technology
-			</div>
-		</div>
-	</div>
+	</section>
+	<section id="learn" class="row"><!-- Learn a bit more -->
+		what is this all about?
+	</section>
 </div>
 
-<script src="assets/js/app.min.js"></script>	
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<div id="tags">
+	<script src="assets/js/app.min.js"></script>	
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', App.settings.ga.urchin, App.settings.ga.url);
-	ga('send', 'pageview');
-</script>		
+		ga('create', App.settings.ga.urchin, App.settings.ga.url);
+		ga('send', 'pageview');
+	</script>		
+</div>
 </body>
 </html>
