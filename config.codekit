@@ -38,6 +38,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/app\/2015\/sum-visitorBrowser.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/2015\/sum-visitorBrowser.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/app\/assets\/css\/app.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -107,6 +116,17 @@
 		"initialSize": 228518,
 		"inputAbbreviatedPath": "\/app\/assets\/img\/cat\/searchTerm.png",
 		"outputAbbreviatedPath": "\/app\/assets\/img\/cat\/searchTerm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/app\/assets\/img\/cat\/visitors.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 154064,
+		"inputAbbreviatedPath": "\/app\/assets\/img\/cat\/visitors.jpg",
+		"outputAbbreviatedPath": "\/app\/assets\/img\/cat\/visitors.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
