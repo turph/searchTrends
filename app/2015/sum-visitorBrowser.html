@@ -1,33 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html ng-app="sos">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Visitor's Browser</title>		
-	<script src="../assets/js/app.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../assets/js/app.min.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" media="screen" href="../assets/css/app.css">      
 </head>
 
 <body>
-<!-- Header -->
-<div class="header">
-	<div class="brandRow"><img src="../assets/img/bc-logo.png" width="183" height="50" alt="Bc Logo"></div>
-	<div class="navRow"><a id="siteNav-btn"><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span><span class="navTitle">Menu</span></a></div>
-</div>
-<!-- Navigation Panel -->
-<div class="siteNavPanel">
-	<span class="grouping">Search</span>
-		<a href="sum-searchKPIs.html">Search KPIs</a>
-		<a href="sum-PLPConversions.html">PLP Page Type Conversions</a>
-		<a href="sum-PLPComponents.html">PLP Components</a>
-		<a href="sum-searchTerms.html">Search Term Types</a>
-	<span class="grouping">Visitors</span>
-		<a href="sum-visitorBrowser.html">Browser's, OS's & Location</a>
-</div>
+<div class="header" ng-include src="'../components/header.html'"></div>
+<div class="siteNavPanel" ng-include src="'../components/menu.html'"></div>
 <!-- Contents -->
 <div class="cat-head" style="background-image:url(../assets/img/cat/visitors.jpg)">
 	<div class="cat-title">
@@ -141,18 +129,7 @@
 	</section>
 </div>
 
-<div id="tags">
-	<script src="assets/js/app.min.js"></script>	
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', App.settings.ga.urchin, App.settings.ga.url);
-		ga('send', 'pageview');
-	</script>		
-</div>
+<div ng-include src="'../components/footer.html'"></div>
 </body>
 </html>
 

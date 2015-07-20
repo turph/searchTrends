@@ -8,7 +8,7 @@
 	}
 	position:fixed;top:0;width:100%;z-index:1;
 }
-.siteNavPanel, .slide-out{
+.siteNavPanel, .navPanel-out{
 	position:absolute;
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -31,7 +31,7 @@
 		&:hover{text-decoration:underline;}
 	}
 }
-.slide-out {
+.navPanel-out {
     margin-left:0;
 }
 

@@ -10,7 +10,7 @@ $(function() {
 var App = { 
 
 	settings: { 
-		name: "My Application",	
+		name: "sos",	
 		version: "1.0.0",
 		ga: {
 			urchin: "UA-XXXXXX-XX",
@@ -32,6 +32,9 @@ var App = {
 
 };
 
+var app = angular.module('sos', []);
+
+
 // Sticky header navigation
 var offset = $( ".navRow" ).offset();
 var sticky = document.getElementById("navRow");
@@ -51,7 +54,3 @@ $(function() {
 	});
 });
 
-// Dynamic sized charting iFrames
-$(function() {
-	$('.fullWidthChart').css('height', $(window).height()+'px');
-});
