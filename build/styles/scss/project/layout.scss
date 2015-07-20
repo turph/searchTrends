@@ -19,6 +19,9 @@ body{background-color:$white;}
 .category{
 	h4{text-align:center;}
 	.content-col2{@include content-col($column-count:2, $column-gap:20px)};
+	.row p, .row h2{margin-left:0;}
+	.row p.push-15{margin-bottom:15px;}
+	.row p.push-20{margin-bottom:20px;}
 }
 
 /* Tile */
