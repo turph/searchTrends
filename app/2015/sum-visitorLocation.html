@@ -1,0 +1,69 @@
+<!doctype html>
+<html ng-app="sos">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Visitor's Location</title>		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="../assets/js/app.min.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" media="screen" href="../assets/css/app.css">      
+</head>
+
+<body>
+<div class="header" ng-include src="'../components/header.html'"></div>
+<div class="siteNavPanel" ng-include src="'../components/menu.html'"></div>
+<!-- Contents -->
+<div class="cat-head" style="background-image:url(../assets/img/cat/visitors.jpg)">
+	<div class="cat-title">
+		<h2>Visitor's Location</h2>
+		<p>State and City. Oh and a little Seoul too. <a href=#learn>| Learn a bit more |</a></p>
+	</div>
+</div>
+<div id="viewport" class="container category">
+  <section class="row"><!-- Overview -->
+		<h1>Overview</h1>
+		<p>Location is not overly important in search at the moment. Eventually with personalization programs, we can begin doing a better job targeting.</p>
+	</section>
+	<section class="row"><!-- State & City -->
+		<h2>Visitor's State & City</h2>
+    <p class="lead">We are consistent in our top 10 states and cities.</p>
+		<div class="col-md-6"><!-- Tile 1 -->
+			<div class="tile">
+			<iframe width="533" height="374" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1BlKipjnoH9Km88o0uNvi1Cu1b_OLOwQWWgxfsrT52_A/pubchart?oid=1389514396&amp;format=interactive"></iframe>
+			</div>
+		</div>
+		<div class="col-md-6"><!-- Tile 2 -->
+			<div class="tile">
+				<iframe width="535" height="370" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1BlKipjnoH9Km88o0uNvi1Cu1b_OLOwQWWgxfsrT52_A/pubchart?oid=68767778&amp;format=interactive"></iframe>
+			</div>
+		</div>
+		<div class="col-md-12 "><!-- Narrative -->
+			<h4>Where are our visitors?</h4>
+			<div class="content-col2">
+				<h5>States</h5>
+				<p>What is interesting is that seasonally our top 10 states do not vary much. Even rather southern states such as Florida and Texas do not show much change in traffic due to seasons.</p>
+
+				<h5>Cities</h5>
+				<p>Again the top 10 cities are rather consistent and map to the states. The one huge outlier is Seoul South Korea which pops up in our city top 10. Given that these values are based on traffic and not revenue, it is pretty impressive that we get this much attention from a SE Asian country.</p>
+			</div>
+		</div>
+	</section>
+	<section id="learn" class="row"><!-- Learn a bit more -->
+		<h2>What is this page about?</h2>
+	  <p class="lead">Visitor location</p>
+		<p>Not overly important to search, but interesting non the less. </p>
+		
+		<h5>Spreadsheets used to make this page</h5>
+		<a target="_blank" href="https://docs.google.com/spreadsheets/d/1BlKipjnoH9Km88o0uNvi1Cu1b_OLOwQWWgxfsrT52_A/edit#gid=764526566">Raw Data</a>
+	</section>
+</div>
+
+<div ng-include src="'../components/footer.html'"></div>
+</body>
+</html>
+
+

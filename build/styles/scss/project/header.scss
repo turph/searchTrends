@@ -8,17 +8,9 @@
 	}
 	position:fixed;top:0;width:100%;z-index:1;
 }
-.siteNavPanel, .navPanel-out{
-	position:absolute;
-  -moz-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-	
-}
 .siteNavPanel {
   position:fixed;
-	margin-left:-250px;
+  margin-left:0;
 	width:250px;
 	height:100%;
 	padding:0 10px 10px 10px;
@@ -32,6 +24,13 @@
 	}
 }
 .navPanel-out {
-    margin-left:0;
 }
 
+
+.siteNavPanel.ng-hide{
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;	
+	margin-left:-250px;
+}

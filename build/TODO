@@ -1,3 +1,5 @@
 TODO list for what needs to be done...
 
-1.) Write Awesome Code
+1.) Make the siteNavPanel show/hide. There are two issues; (1) You can not simply use a ng-controller and ng-include - they clash, and (2) make the show/hide work...
+
+ 

@@ -15,7 +15,7 @@
 
 <body>
 <div class="header" ng-include src="'../components/header.html'"></div>
-<div class="siteNavPanel" ng-include src="'../components/menu.html'"></div>
+<div class="siteNavPanel" ng-hide="myVar" ng-include src="'../components/menu.html'"></div>
 <!-- Contents -->
 <div class="cat-head" style="background-image:url(../assets/img/cat/plpComponents.jpg)">
 	<div class="cat-title">
@@ -24,12 +24,19 @@
 	</div>
 </div>
 <div id="viewport" class="container category">
-  <section class="row"><!-- Facet Usage -->
+  <section class="row"><!-- Overview -->
 		<h1>Overview</h1>
+		<p>insight.</p>
+	</section>
+  <section class="row"><!-- Facet Usage -->
 		<h2>Visits using a facet</h2>
-    <p class="lead">Monthly facet usage compared to last year</p>
+    <p class="lead">YoY monthly facet usage</p>
 		<iframe width="1171" height="465" seamless frameborder="0" scrolling="no" src="https://docs.google.com/a/backcountry.com/spreadsheets/d/1Nt9t5Ic-1-wFz6gXPb0pLpLj9DawFLs9x_TDS5HSj4I/pubchart?oid=180801308&amp;format=interactive"></iframe>
-		<p class="small">Copy here</p>
+		<div class="col-md-12 "><!-- Narrative -->
+			<h4>Key take aways</h4>
+			<p class="text-center push-20">Expand (or not) on the summary above.</p>
+			<p>insight</p>
+		</div>
   </section>
 	<section class="row"><!-- Side by Side Comparison -->
 		<h2>Side by side comparison</h2>

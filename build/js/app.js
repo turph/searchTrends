@@ -7,6 +7,17 @@ $(function() {
 	App.init();
 });
 
+// Sticky header navigation
+var offset = $( ".navRow" ).offset();
+var sticky = document.getElementById("navRow");
+$(window).scroll(function() {
+	if ( $('body').scrollTop() >= 50){
+		$('.navRow').addClass('fixed');
+	} else {
+		$('.navRow').removeClass('fixed');
+	}
+});
+
 var App = { 
 
 	settings: { 
@@ -33,24 +44,19 @@ var App = {
 };
 
 var app = angular.module('sos', []);
-
-
-// Sticky header navigation
-var offset = $( ".navRow" ).offset();
-var sticky = document.getElementById("navRow");
-$(window).scroll(function() {
-	if ( $('body').scrollTop() >= 50){
-		$('.navRow').addClass('fixed');
-	} else {
-		$('.navRow').removeClass('fixed');
-	}
-});
-
-// Slide out site navigation
-
-$(function() {
-	$('#siteNav-btn').click(function() {
-		$('.siteNavPanel').toggleClass("slide-out");
+	app.controller('navSlideCtrl', function($scope) {
+		$scope.myVar = true;
+		$scope.toggle = function() {
+			$scope.myVar = !$scope.myVar;
+		};
 	});
-});
+	
+
+
+
+
+
+
+
+
 

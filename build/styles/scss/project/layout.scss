@@ -4,6 +4,8 @@
 /* General Page */
 body{background-color:$white;}
 .row h2, .row p{margin-left:15px;}
+#learn{padding:20px;background-color:$clouds;}
+.footer{width:100%;height:100px;margin-top:40px;background-color:$concrete;}
 
 /* Category Pages */
 .cat-head{
@@ -36,4 +38,16 @@ body{background-color:$white;}
 	}
 	td{padding:1px 2px;}
 	td:last-child{text-align:right;}
+}
+/* viewportOverlays */
+.browserHeight{
+	width:600px;height:500px;position:relative;margin-left:300px;
+	img{width:600px;height:500px;text-align:center;}
+}
+.viewportOverlay{
+	background-color:rgba(241,196,15,0.3);
+	border-bottom:1px solid $orange;
+	position:absolute;
+	width:600px;
+	p{position:absolute;bottom:2px;text-align:right;width:120%;margin:0;}
 }
