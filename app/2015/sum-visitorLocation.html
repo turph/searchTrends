@@ -5,17 +5,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Visitor's Location</title>		
+	<title>Visitor's Location</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="../assets/js/app.min.js" type="text/javascript" charset="utf-8"></script>
-	<link rel="stylesheet" media="screen" href="../assets/css/app.css">      
+	<link rel="stylesheet" media="screen" href="../assets/css/app.css">
 </head>
 
-<body>
+<body controller="mainCtrl">
 <div class="header" ng-include src="'../components/header.html'"></div>
-<div class="siteNavPanel" ng-include src="'../components/menu.html'"></div>
+<div class="siteNavPanel" ng-show="showMenu"></div>
+
 <!-- Contents -->
 <div class="cat-head" style="background-image:url(../assets/img/cat/visitors.jpg)">
 	<div class="cat-title">
@@ -56,7 +57,7 @@
 		<h2>What is this page about?</h2>
 	  <p class="lead">Visitor location</p>
 		<p>Not overly important to search, but interesting non the less. </p>
-		
+
 		<h5>Spreadsheets used to make this page</h5>
 		<a target="_blank" href="https://docs.google.com/spreadsheets/d/1BlKipjnoH9Km88o0uNvi1Cu1b_OLOwQWWgxfsrT52_A/edit#gid=764526566">Raw Data</a>
 	</section>
@@ -65,5 +66,3 @@
 <div ng-include src="'../components/footer.html'"></div>
 </body>
 </html>
-
-

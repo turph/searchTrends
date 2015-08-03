@@ -3,7 +3,7 @@
 // If using JSLint for syntax debugging, include the following
 /*global $, console, alert, App*/
 
-$(function() { 
+$(function() {
 	App.init();
 });
 
@@ -18,10 +18,10 @@ $(window).scroll(function() {
 	}
 });
 
-var App = { 
+var App = {
 
-	settings: { 
-		name: "sos",	
+	settings: {
+		name: "sos",
 		version: "1.0.0",
 		ga: {
 			urchin: "UA-XXXXXX-XX",
@@ -29,40 +29,33 @@ var App = {
 		}
 	},
 
-	listen: function() { 
-		// Application Listeners can be loaded here for easy configuration		
+	listen: function() {
+		// Application Listeners can be loaded here for easy configuration
 		console.log("Ready and Listening");
-	},	
+	},
 
 	init: function() {
 		// Kick off the listeners
 		this.listen();
 		// Application has been initalized
-		console.log(this.settings.name + "(v" + this.settings.version + ") Started");	
+		console.log(this.settings.name + "(v" + this.settings.version + ") Started");
 	}
 
 };
 
 var app = angular.module('sos', []);
-	app.controller('navSlideCtrl', function($scope) {
-		$scope.myVar = true;
-		$scope.toggle = function() {
-			$scope.myVar = !$scope.myVar;
-		};
-	});
-	
-	
-	
 
+app.controller('mainCtrl', function($scope) {
+	$scope.showMenu = true;
 
+  $scope.toggleMenu = function() {
+    $scope.showMenu = !$scope.showMenu;
+  };
+});
 
-
-
-	
-	
-	
-	
-	
-	
-
-
+app.directive('siteNavPanel', function() {
+  return {
+    restrict: 'C',
+    templateUrl: '../components/menu.html'
+  };
+});
