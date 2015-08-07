@@ -16,7 +16,6 @@ $img-url: "../img";
 @import "globals/colors";
 @import "globals/custom-mixins";
 @import "globals/fonts";
-@import "globals/bcColors";
 
 // Globals
 // ------------------------------------------------------------------------
@@ -32,8 +31,3 @@ $img-url: "../img";
 
 // Mobile Specific Styles & Settings
 @import "globals/mobile";
-
-// Project files
-// ------------------------------------------------------------------------
-@import "project/header";
-@import "project/layout";

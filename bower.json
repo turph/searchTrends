@@ -29,8 +29,5 @@
     ".gitignore",
     "*.sublime-project",
     "*.sublime-workspace"
-  ],
-  "dependencies": {
-    "angularjs": "~1.4.3"
-  }
+  ]
 }

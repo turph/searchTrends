@@ -3,25 +3,14 @@
 // If using JSLint for syntax debugging, include the following
 /*global $, console, alert, App*/
 
-$(function() {
+$(function() { 
 	App.init();
 });
 
-// Sticky header navigation
-var offset = $( ".navRow" ).offset();
-var sticky = document.getElementById("navRow");
-$(window).scroll(function() {
-	if ( $('body').scrollTop() >= 50){
-		$('.navRow').addClass('fixed');
-	} else {
-		$('.navRow').removeClass('fixed');
-	}
-});
+var App = { 
 
-var App = {
-
-	settings: {
-		name: "sos",
+	settings: { 
+		name: "My Application",	
 		version: "1.0.0",
 		ga: {
 			urchin: "UA-XXXXXX-XX",
@@ -29,33 +18,27 @@ var App = {
 		}
 	},
 
-	listen: function() {
-		// Application Listeners can be loaded here for easy configuration
+	listen: function() { 
+		// Application Listeners can be loaded here for easy configuration		
 		console.log("Ready and Listening");
-	},
+	},	
 
 	init: function() {
 		// Kick off the listeners
 		this.listen();
 		// Application has been initalized
-		console.log(this.settings.name + "(v" + this.settings.version + ") Started");
+		console.log(this.settings.name + "(v" + this.settings.version + ") Started");	
 	}
 
 };
 
-var app = angular.module('sos', []);
 
-app.controller('mainCtrl', function($scope) {
-	$scope.showMenu = true;
-
-  $scope.toggleMenu = function() {
-    $scope.showMenu = !$scope.showMenu;
-  };
+$(function() {
+    $('.header').load('../components/header.html');
+    $('.siteNavPanel').load('../components/menu.html');
+    $('.footer').load('../components/footer.html');
 });
 
-app.directive('siteNavPanel', function() {
-  return {
-    restrict: 'C',
-    templateUrl: '../components/menu.html'
-  };
+$(document).on('click', '#menuBtn', function(){
+	$('.siteNavPanel').toggle();
 });
